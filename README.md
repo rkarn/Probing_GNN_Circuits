@@ -17,3 +17,4 @@ To run these notebooks, install the required dependencies using:
 - torch, dgl, numpy, pandas, matplotlib
 - scikit-learn, seaborn, networkx
 
+`Detailed instructions for generating a Docker image containing our trained GCNN model and deploying it on AWS Container platform will be provided after paper acceptance. Stay tuned for the deployment code, Dockerfile, and step-by-step guidance`.
