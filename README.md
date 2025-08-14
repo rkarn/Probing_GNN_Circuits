@@ -5,10 +5,18 @@ This repository contains Jupyter notebooks implementing a black-box probing fram
 ## Notebooks Overview
 
 ### `Probing_GCNN.ipynb`
-This notebook introduces the probing framework for evaluating GCNN robustness. It systematically computes sensitivity metrics across different circuit gate types using black-box techniques, providing insights into model behavior under adversarial conditions and random perturbations.
+This notebook introduces the probing framework for evaluating GCNN robustness. It systematically computes sensitivity metrics across different circuit gate types using black-box techniques, providing insights into model behavior under adversarial conditions and random perturbations. It also measures the relative-error of each metric and the ML evaluation metric under pruturbed features.
 
 ### `ISCAS85+EPFL_Parsing.ipynb`
 This notebook parses raw circuit netlist data from the ISCAS'85 and EPFL benchmarks, extracting nodes, edges, and circuit features. The processed data is saved as a CSV file, which is later used to build a graph with DGL as input for the GCNN model.
+
+### `Comparison with Other Architectures`
+There are several notebooks under this directory. It uses following architectures:
+- GraphSAINT
+- GraphSAGE
+- Graph isomorphism Network (GIN)
+- Graph Attention Network (GAT)
+They perform the same operations as in `Probing_GCNN.ipynb`. The objective is to compare the GCNN with state-of-the-arts GNN architecrure for robusness in node classification.
 
 ## Installation & Dependencies
 
