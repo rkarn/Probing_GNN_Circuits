@@ -1,8 +1,17 @@
-# Black‑Box Probing of Graph Convolution Neural Networks in Circuit Analysis (ISCAS'86 + EPFL)
+# Black‑Box Probing of Graph Neural Networks in Circuits (ISCAS'86 + EPFL)
 
 This repository contains Jupyter notebooks implementing a black-box probing framework to evaluate the robustness of Graph Convolutional Neural Networks (GCNNs) in circuit analysis. The approach leverages sensitivity metrics such as Jacobian norm, Lipschitz constant, Hessian-based curvature, prediction margin, adversarial robustness radius, and stability under input noise to assess model reliability in a black-box MLaaS environment.
 
 ## Notebooks Overview
+
+#### `Trojan_Injection_Parsing.ipynb` in `Trojan_Injection_Detection`
+This notebook reads the ISCAS+EPFL dataset (from `https://github.com/jpsety/verilog_benchmark_circuits`) and inject Trojan. Three types of trojan is inserted using Trust-hub templates including countermux, fsmor, and andxor. Then it parses the trojanized and clean samples and generates CSV files for node-level, subgraph-level, and graph-level classification.
+
+#### `Trojan_Detection.ipynb` in `Trojan_Injection_Detection`
+This notebook reads the CSV files and perform thee types of training and evaluation for trojan vs non-trojan classification. It uses different GNN architectures.
+   - Node-level
+   - Subgraph-level
+   - Graph-level
 
 ### `Probing_GCNN.ipynb` in `General_Node_Classification` folder
 This notebook introduces the probing framework for evaluating GCNN robustness. It systematically computes sensitivity metrics across different circuit gate types using black-box techniques, providing insights into model behavior under adversarial conditions and random perturbations. It also measures the relative-error of each metric and the ML evaluation metric under pruturbed features.
