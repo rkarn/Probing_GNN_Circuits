@@ -1,6 +1,6 @@
 # Black‑Box Probing of Graph Neural Networks in Circuits (ISCAS'86 + EPFL)
 
-This repository contains Jupyter notebooks implementing a black-box probing framework to evaluate the robustness of Graph Convolutional Neural Networks (GCNNs) in circuit analysis. The approach leverages sensitivity metrics such as Jacobian norm, Lipschitz constant, Hessian-based curvature, prediction margin, adversarial robustness radius, and stability under input noise to assess model reliability in a black-box MLaaS environment.
+This repository contains Jupyter notebooks implementing a black-box probing framework to evaluate the robustness of Graph Neural Networks (GNNs) in circuit analysis. The approach leverages sensitivity metrics such as Jacobian norm, Lipschitz constant, Hessian-based curvature, prediction margin, adversarial robustness radius, and stability under input noise to assess model reliability in a black-box MLaaS environment.
 
 ## Notebooks Overview
 
