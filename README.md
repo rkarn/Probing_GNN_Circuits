@@ -21,11 +21,11 @@ This notebook reads the CSV files and performs three types of training and evalu
 - `Trojan_Detection_Robustness_subgraph_level.ipynb`: Performs subgraph-level Trojan detection and computes several robustness metrics.
 - `Trojan_Detection_Robustness_graph_level.ipynb`: Performs graph-level Trojan detection and computes several robustness metrics.
 
-### `Probing_GCNN.ipynb` in `General_Node_Classification` folder
-This notebook introduces the probing framework for evaluating GCNN robustness. It systematically computes sensitivity metrics across different circuit gate types using black-box techniques, providing insights into model behavior under adversarial conditions and random perturbations. It also measures the relative error of each metric and the ML evaluation metrics under perturbed features.
-
 ### `ISCAS85+EPFL_Parsing.ipynb` in `General_Node_Classification` folder
 This notebook parses raw circuit netlist data from the ISCAS'85 and EPFL benchmarks, extracting nodes, edges, and circuit features. The processed data is saved as a CSV file used to build a DGL graph for the GCNN model.
+
+### `Probing_GCNN.ipynb` in `General_Node_Classification` folder
+This notebook introduces the probing framework for evaluating GCNN robustness. It systematically computes sensitivity metrics across different circuit gate types using black-box techniques, providing insights into model behavior under adversarial conditions and random perturbations. It also measures the relative error of each metric and the ML evaluation metrics under perturbed features.
 
 ### `Comparison with Other Architectures` in `General_Node_Classification` folder
 This directory contains notebooks for the following architectures:
