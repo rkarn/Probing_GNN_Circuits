@@ -35,6 +35,12 @@ This directory contains notebooks for the following architectures:
 - Graph Attention Network (GAT)
 They perform the same operations as `Probing_GCNN.ipynb`. The objective is to compare the robustness of GCNN with state-of-the-art GNN architectures for node classification.
 
+## Trojan Dataset:
+- Folder `Trojanized_ISCAS_EPFL_andxor` contains the ISCAS85+EPFL netlist containing Trojan injected using `andxor` template from `Trust-hub`.
+- Folder `Trojanized_ISCAS_EPFL_countermux` contains the ISCAS85+EPFL netlist containing Trojan injected using `countermux` template from `Trust-hub`.
+- Folder `Trojanized_ISCAS_EPFL_fsmor` contains the ISCAS85+EPFL netlist containing Trojan injected using `fsmor` template from `Trust-hub`.
+- Parsed CSV files for those Trojanized netlist are avaiable in `Trojan_Injection_Detection/GNNDatasets` folder for node-level, subgraph-level, and graph-level classification.
+
 ## Installation & Dependencies
 
 To run these notebooks, install the required dependencies:
