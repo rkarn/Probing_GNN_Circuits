@@ -21,6 +21,11 @@ This notebook reads the CSV files and performs three types of training and evalu
 - `Trojan_Detection_Robustness_subgraph_level.ipynb`: Performs subgraph-level Trojan detection and computes several robustness metrics.
 - `Trojan_Detection_Robustness_graph_level.ipynb`: Performs graph-level Trojan detection and computes several robustness metrics.
 
+#### Comparison with Other Architecture in `Trojan_Injection_Detection` folder
+- HW2VEC taken from `https://github.com/AICPS/hw2vec`.
+- TrojanSAINT taken from `https://github.com/DfX-NYUAD/TrojanSAINT`.
+- To comapre end-to-end the node-, subgraph-, and graph-level hardware trojan detection is shown in the respective jupyter notebook file.
+
 ### `ISCAS85+EPFL_Parsing.ipynb` in `General_Node_Classification` folder
 This notebook parses raw circuit netlist data from the ISCAS'85 and EPFL benchmarks, extracting nodes, edges, and circuit features. The processed data is saved as a CSV file used to build a DGL graph for the GCNN model.
 
