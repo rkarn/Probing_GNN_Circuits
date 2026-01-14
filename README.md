@@ -8,7 +8,9 @@ This repository contains Jupyter notebooks implementing a black-box probing fram
 - Adversarial Robustness Radius
 - Stability under Input Noise
 
-## Notebooks Overview
+## A supplementary materials containing detailed description of some sections of the paper and the mathematical explanations of `aforementioned` metrics are given in [Supplementary Materials](Suplementary_materials.pdf).
+
+### Notebooks Overview
 
 #### `Trojan_Injection_Parsing.ipynb` in `Trojan_Injection_Detection`
 This notebook reads the ISCAS+EPFL dataset (from `https://github.com/jpsety/verilog_benchmark_circuits`) and injects Trojans. Three types of Trojans are inserted using Trust-Hub templates, including countermux, fsmor, and andxor. It then parses the Trojanized and clean samples and generates CSV files for node-level, subgraph-level, and graph-level classification.
